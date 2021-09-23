@@ -1,14 +1,14 @@
-FROM  ubuntu:18.04
+FROM ubuntu
 RUN apt-get update -y && apt-get upgrade -y && apt-get install git -y && apt-get install unzip -y
 WORKDIR /opt
 RUN apt install python3-pip -y
-RUN  apt install python3-flask -y
+RUN apt install python3-flask -y
 RUN pip3 install mysql-connector-python
-RUN  apt-get install mysql-server -y
-RUN  apt-get install libmysqlclient-dev -y
+RUN apt-get install mysql-server -y
+RUN apt-get install libmysqlclient-dev -y
 RUN pip3 install flask-mysqldb
-RUN git clone https://github.com/nageswar103/flask1.git
-WORKDIR /opt/flask1
+RUN git clone https://github.com/SharathJunubala/flask1-1.git
+WORKDIR /opt/flask1-1
 RUN mkdir templates
 RUN mv flask_main flask_main.py
 RUN mv form.html templates
