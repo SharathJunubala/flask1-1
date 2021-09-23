@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: flask-deployment
-        image:  741484487672.dkr.ecr.us-east-2.amazonaws.com/flask:latest
+        image:  741484487672.dkr.ecr.us-east-2.amazonaws.com/flask:number
         ports:
         - containerPort: 5000
